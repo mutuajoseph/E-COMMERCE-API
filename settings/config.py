@@ -11,26 +11,12 @@ class Settings(BaseSettings):
     BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = []
     SECRET_KEY: str
 
-    FIRST_SUPERUSER_FIRST_NAME: Optional[str]
-    FIRST_SUPERUSER_LAST_NAME: Optional[str]
-    FIRST_SUPERUSER_EMAIL: Optional[str]
-    FIRST_SUPERUSER_PASSWORD: Optional[str]
-
     SQLALCHEMY_DATABASE_URI_POSTGRES: Optional[str]
 
     ACCESS_TOKEN_EXPIRE_MINUTES: Optional[int]
-    ALGORITHM: Optional[str]
-
-    ROLES_OPEN_REGISTRATION: Optional[bool]
+    # ALGORITHM: Optional[str]
 
     # DOS
-    DOS_ACCESS_ID: Optional[str]
-    DOS_SECRET_KEY: Optional[str]
-    DOS_ENDPOINT_URL: Optional[str]
-    DOS_BUCKET_URL: Optional[str]
-    DOS_REGION_NAME: Optional[str]
-    DOS_CURRENT_UPLOAD_FOLDER: Optional[str]
-    DOS_NAME_OF_BUCKET: Optional[str]
     UNSPLASH_API_KEY: Optional[str]
 
     class Config:
