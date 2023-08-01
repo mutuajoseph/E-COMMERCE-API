@@ -23,7 +23,7 @@ services:
     image: postgres
     volumes:
       - pgdata:/var/lib/postgresql/data/
-    container_name: dbase
+    container_name: ecommercebase
     restart: always
     env_file:
       - ./.postgres
