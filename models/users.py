@@ -1,4 +1,3 @@
-import uuid
 from sqlalchemy import Boolean, DateTime, func, String, Integer, Column
 from db.base_class import Base
 
@@ -6,7 +5,6 @@ from db.base_class import Base
 class Users(Base):
     __tablename__ = "users"
     id = Column(Integer, primary_key=True, index=True)
-    public_id = Column(String(length=256), unique=True, nullable=False, default=str(uuid.uuid4()))
     first_name = Column(String(length=256), nullable=False)
     last_name = Column(String(length=256), nullable=False)
     email = Column(String(length=256), nullable=False, unique=True)
